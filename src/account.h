@@ -262,7 +262,7 @@ public:
 
   bool has_xdata() const {
 #if BOOST_VERSION >= 105600
-    return xdata_ != NULL;
+    return xdata_ != boost::none;
 #else
     return xdata_;
 #endif

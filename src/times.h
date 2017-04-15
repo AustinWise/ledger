@@ -569,7 +569,7 @@ public:
 
   bool   is_valid() const {
 #if BOOST_VERSION >= 105600
-    return start != NULL;
+    return start != boost::none;
 #else
     return start;
 #endif

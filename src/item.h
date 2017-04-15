@@ -192,7 +192,7 @@ public:
 
   virtual bool has_date() const {
 #if BOOST_VERSION >= 105600
-    return _date != NULL;
+    return _date != boost::none;
 #else
     return _date;
 #endif
